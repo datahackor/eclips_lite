@@ -43,3 +43,4 @@ logui再组织好发给mptask（也遵循大于250字节就用共享内存的规
 
 - 为什么要给logui？而不是直接给mptask？因为logui需要显示给用户看。
 - 
+![avatar](https://github.com/datahackor/eclips_lite/blob/main/pics/2022-04-28%2015_21_03-eclips_lite%20(Running)%20-%20Microsoft%20Visual%20Studio.png)
