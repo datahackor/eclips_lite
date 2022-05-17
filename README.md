@@ -1,10 +1,11 @@
 # eclips_lite
 裁剪版的 Baker Hughes ECLIPS System
 
-# Router
- 用来将数据转发给远程或本地通过网络接收的终端，比如显示。
- 这个是将计算处理和显示松耦合的重要程序，每一个eclips实例都会有一个或多个router
- 
+- 1年的闲暇时间，7万行代码的内核实现。
+- SysV消息机制、RDR、AFF、XTF、刻度等一系列文件格式完全实现。
+- 牛逼啊牛逼！为什么说牛逼呢，因为可以与5700系统模块互换运行。
+
+
 # cls2exe
 - 管理“开始”“停止”记录
 - 管理“开始、停止刻度校验”
@@ -39,9 +40,8 @@ EI_TYPE ==2 WTS DRIVER
 # share memory 共享内存
 进程间的数据交换都是消息传递，大的数据使用共享内存
 比如tcc发送给logui的PFN参数数据修改，大于250字节的话就用共享内存
-logui再组织好发给mptask（也遵循大于250字节就用共享内存的规则），删除共享内存由接收方执行
+loguif再组织好发给mptask（也遵循大于250字节就用共享内存的规则），删除共享内存由接收方执行
 
-- 为什么要给logui？而不是直接给mptask？因为logui需要显示给用户看。
 - 
 ![avatar](https://github.com/datahackor/eclips_lite/blob/main/pics/2022-04-28%2015_09_27-eclips_lite%20-%20Microsoft%20Visual%20Studio.png)
 ![avatar](https://github.com/datahackor/eclips_lite/blob/main/pics/2022-04-28%2015_14_14-NMR%20Data%20Acqusition%20Systemm.png)
