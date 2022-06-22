@@ -46,7 +46,10 @@ FileAlias            REPEAT2;
 RepeatCurveColor     REPEAT2_COLOR;   
 #include             <p857d.rpt  >
 #endif   
-通过CPP预处理之后变成这样：  
+}  
+
+- 通过CPP预处理之后变成这样：  
+
 Section       
 {  
   Program                 log;  
@@ -86,6 +89,10 @@ Title       "NEUTRON POROSITY ";
 }  
 }  
 }  
+
+- 
+然后再通过词法分析变成符号文件，再通过IPC传给显示程序，这样每一个显示程序就会自动显示相关的信息。  
+
 
                        _oo0oo_
                       o8888888o
